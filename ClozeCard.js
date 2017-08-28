@@ -1,3 +1,6 @@
+  // Directions
+  // -----------------------------------------------------------
+
   // * This file should define a Node module that exports a constructor for creating cloze-deletion flashcards, e.g.:
     // `module.exports = ClozeCard;`
 
@@ -12,7 +15,10 @@
   // * The constructor should throw or log an error when the cloze deletion does _not_ appear in the input text.
 
   // * Use prototypes to attach these methods, wherever possible.
+  // --------------------------------------------------------------
+
 var BasicCard = require("./BasicCard.js");
+var BasicArray = require("./basic.json");
 
 var ClozeCard = function(fullText, cloze) {
   this.cloze = cloze;
